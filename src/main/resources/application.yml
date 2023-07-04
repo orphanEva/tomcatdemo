@@ -1,0 +1,11 @@
+server:
+  port: 12221
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://124.222.37.55:3306/test?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: 1221
+  redis:
+    port: 6379
+    host: 124.222.37.55
