@@ -40,5 +40,11 @@ public class TestApplication {
 //            System.out.println(tuple.getValue() + ": " + tuple.getScore());
 //        }
 
+        new Thread(()->{
+            System.out.println("执行任务");
+        }).start();
+
+//        new String()
+
     }
 }
