@@ -24,6 +24,7 @@ public class TestApplication {
             while ((line = buf.readLine()) != null) {
 //                redisTemplate.opsForZSet().incrementScore("test:zset", line, 1);
                 // 这是主分支
+//                redisTemplate.opsForZSet().incrementScore("test:zset", line, 1);？？？？
                 if(map.get(line) == null){
                     map.put(line, 1);
                 }else {
@@ -40,6 +41,12 @@ public class TestApplication {
 //        for (ZSetOperations.TypedTuple<String> tuple : result){
 //            System.out.println(tuple.getValue() + ": " + tuple.getScore());
 //        }
+
+        new Thread(()->{
+            System.out.println("执行任务");
+        }).start();
+
+//        new String()
 
     }
 }
